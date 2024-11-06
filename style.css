@@ -1,0 +1,22 @@
+.jogo {
+    width: 600px;
+    height: 600px;
+    border: 1px black solid;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+}
+
+.casa {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(104, 101, 101);
+    margin: 0 auto;
+    border: 1px #f4f4f2 dotted;
+}
+
+.casa:hover{
+    background-color: darkgreen;
+    translate: 15px;
+    
+}
