@@ -18,5 +18,20 @@
             <div class="casa"></div>
             <div class="casa"></div>
         </div>
+        <?php
+        session_start();
+
+        function getplayerturn() {
+            $players = ['X', 'O'];
+
+            if(!isset($_SESSION['turn'])){
+                $_SESSION['turn'] = 0;
+            }
+            $currentPlayer = $players[$_SESSION['turn'] % 2];
+
+            return $currentPlayer;
+        }
+        ?>
+        
     </body>
 </html>
